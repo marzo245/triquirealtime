@@ -1,0 +1,77 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-status h2 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+  background-color: #333;
+  padding: 4px;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+.cell {
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover.clickable {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.cell.x {
+  color: #e74c3c;
+}
+
+.cell.o {
+  color: #3498db;
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+}
+
+.turn-indicator {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.player-indicator {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.player-indicator.active {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1);
+}

@@ -1,0 +1,40 @@
+{
+  "name": "triqui-realtime",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe multiplayer game with real-time WebSocket communication",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "install-all": "npm install && cd client && npm install",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "websockets",
+    "socket.io",
+    "react",
+    "mongodb",
+    "multiplayer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.5",
+    "mongoose": "^8.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
