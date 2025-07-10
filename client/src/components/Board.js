@@ -40,11 +40,23 @@ const Board = ({ board, onCellClick, currentPlayer, gameOver, winner, isMyTurn }
       <div className="game-status">
         <h2>{getGameStatus()}</h2>
       </div>
-      
       <div className="board">
-        {board.map((_, index) => renderCell(index))}
+        <div className="board-row">
+          {renderCell(0)}
+          {renderCell(1)}
+          {renderCell(2)}
+        </div>
+        <div className="board-row">
+          {renderCell(3)}
+          {renderCell(4)}
+          {renderCell(5)}
+        </div>
+        <div className="board-row">
+          {renderCell(6)}
+          {renderCell(7)}
+          {renderCell(8)}
+        </div>
       </div>
-      
       <div className="turn-indicator">
         <span className={`player-indicator ${currentPlayer === 'X' ? 'active' : ''}`}>
           Jugador X

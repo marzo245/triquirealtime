@@ -3,8 +3,8 @@ const http = require('http');
 const socketIo = require('socket.io');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config();
 const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const app = express();
 const server = http.createServer(app);
@@ -25,6 +25,7 @@ app.use(express.json());
 
 // Conectar a MongoDB
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/triqui-realtime';
+console.log('MONGODB_URI usado:', MONGODB_URI); // <-- Línea de depuración
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('Conectado a MongoDB'))
   .catch(err => console.error('Error conectando a MongoDB:', err));

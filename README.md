@@ -15,6 +15,10 @@ Una aplicación de Tic Tac Toe multijugador en tiempo real construida con React,
 
 [Ver Demo en Heroku](https://tu-app.herokuapp.com) *(Actualizar con tu URL)*
 
+## 🖼️ Capturas de Pantalla
+
+<!-- Puedes agregar aquí imágenes o GIFs de la app funcionando -->
+
 ## 🛠️ Tecnologías
 
 ### Backend
@@ -53,7 +57,7 @@ npm run install-all
 
 ### 3. Configuración de variables de entorno
 
-Crea un archivo `.env` en la raíz del proyecto:
+Crea un archivo `.env` en la carpeta `server/`:
 
 ```env
 # Configuración de la base de datos
@@ -195,6 +199,8 @@ git push heroku main
 
 ## 🧪 Testing
 
+> **Nota:** Los tests automáticos aún no están implementados. Puedes contribuir agregando tests para mejorar la calidad del proyecto.
+
 ```bash
 # Ejecutar tests (cuando estén implementados)
 npm test
@@ -214,9 +220,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
+**Diego Pérez**
+- GitHub: [@diego-usuario](https://github.com/diego-usuario)
+- LinkedIn: [Diego Pérez](https://linkedin.com/in/diego-perez)
 
 ## 🙏 Agradecimientos
 
